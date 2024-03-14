@@ -1,0 +1,20 @@
+{
+  "canisters": {
+    "AgroInnovaTest_backend": {
+      "build": "npx azle AgroInnovaTest_backend",
+      "candid": "src/AgroInnovaTest_backend/AgroInnovaTest_backend.did",
+      "gzip": true,
+      "main": "src/AgroInnovaTest_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/AgroInnovaTest_backend/AgroInnovaTest_backend.wasm"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

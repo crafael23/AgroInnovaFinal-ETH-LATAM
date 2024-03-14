@@ -1,0 +1,7 @@
+{
+  "name": "AgroInnovaTestFront",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
