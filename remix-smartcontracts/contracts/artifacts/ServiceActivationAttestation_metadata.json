@@ -1,0 +1,216 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "_userId",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint64",
+						"name": "_equipmentId",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_activationDays",
+						"type": "uint32"
+					}
+				],
+				"name": "addEntry",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "attestationsArray",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "userId",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint64",
+						"name": "equipmentId",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint32",
+						"name": "activationDays",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "attestationsCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "_user",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint64",
+						"name": "_equipmentId",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_activationDays",
+						"type": "uint32"
+					}
+				],
+				"name": "createServiceAttestation",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "_userId",
+						"type": "uint64"
+					}
+				],
+				"name": "getAttestationsByUserId",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint64",
+								"name": "userId",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint64",
+								"name": "equipmentId",
+								"type": "uint64"
+							},
+							{
+								"internalType": "uint32",
+								"name": "activationDays",
+								"type": "uint32"
+							}
+						],
+						"internalType": "struct ServiceActivationAttestation.Attestations[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/activation.sol": "ServiceActivationAttestation"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@ethereum-attestation-service/eas-contracts/contracts/Common.sol": {
+			"keccak256": "0x957bd2e6d0d6d637f86208b135c29fbaf4412cb08e5e7a61ede16b80561bf685",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da1dc9aedbb1d4d39c46c2235918d3adfbc5741dd34a46010cf425d134e7936d",
+				"dweb:/ipfs/QmWUk6bXnLaghS2riF3GTFEeURCzgYFMA5woa6AsgPwEgc"
+			]
+		},
+		"@ethereum-attestation-service/eas-contracts/contracts/IEAS.sol": {
+			"keccak256": "0x242e0203b314c8539fd4ad3c1f0b7a9c1178fe55b223f4bc007eb9cbf271854c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a3888dc93e93f9f467680f9017bed54a7a4f3b7135cf76a3cbebe96fc263a8c1",
+				"dweb:/ipfs/QmSYaJ6oGNw2CocKWSoQnqrpMnD8ag9Gv5hS3U7xnr4Nuv"
+			]
+		},
+		"@ethereum-attestation-service/eas-contracts/contracts/ISchemaRegistry.sol": {
+			"keccak256": "0xea97dcd36a0c422169cbaac06698249e199049b627c16bff93fb8ab829058754",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d453a929ef64a69cd31195ec2ee5ed1193bfa29f633e13c960e92154c37ad158",
+				"dweb:/ipfs/QmXs1Z3njbHs2EMgHonrZDfcwdog4kozHY5tYNrhZK5yqz"
+			]
+		},
+		"@ethereum-attestation-service/eas-contracts/contracts/ISemver.sol": {
+			"keccak256": "0x04a67939b4e1a8d0a51101b8f69f8882930bbdc66319f38023828625b5d1ff18",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3dd543fa0e33cef1ea757627f9c2a10a66ee1ce17aa9087f437c5b53a903c7f0",
+				"dweb:/ipfs/QmXsy6UsGBzF9zPCCjmiwPpCcX3tHqU13TmR67B69tKnR6"
+			]
+		},
+		"@ethereum-attestation-service/eas-contracts/contracts/resolver/ISchemaResolver.sol": {
+			"keccak256": "0x479f39f03425df5385d790cd2c7447b8250aeb9733d13029d3da8c5982b6604b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c378654832e0e564f1ef502977253c243712501379ac6233caac05979713ba80",
+				"dweb:/ipfs/QmbKdSGgniy45K2vEH93BJtJYo1syp3FL8JCMEUtZELpjx"
+			]
+		},
+		"contracts/activation.sol": {
+			"keccak256": "0x2364ff4b974785c801ddd8b0820b2f1df652ada611cbf08c3a6118100d7d7ffa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://633f4c66dbd2a063c375cc9bd4867ad7ee093e93831b299006dfcedbb0c8d9f8",
+				"dweb:/ipfs/QmNmazPSe9NjbD2F4utWPHF6xdiMbnrqwqp8fgMkYFUF9Z"
+			]
+		}
+	},
+	"version": 1
+}
